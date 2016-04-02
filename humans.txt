@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Timothy Lim -- @thewheat
+
+# THANKS
+
+    HTML5 Boilerplate
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Intercom
