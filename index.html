@@ -6,6 +6,7 @@
         <title>Community Outreach Program</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,11 +15,14 @@
           font-family: sans-serif;
         }
 
-        h1 {
-          font-size: 1.6em;
+        .section {
+          border: 1px solid #eee;
+          padding: 1em;
+          margin-bottom: 1em;
         }
-        h2 {
-          font-size: 1.2em;
+
+        .section > h2{
+          margin-top: 0;
         }
 
         .emoji {
@@ -27,14 +31,27 @@
         img {
           max-width:100%;
         }
-        .section {
+        img.logo{
+          max-height: 5em;
+          float:left;
+          margin-right: 1em;
+        }
+        .about{
+          clear: both;
+          margin-top: 1em;
+        }
+        .well {
           margin-bottom: 1em;
           border: 1px solid gray;
           padding: 0.5em;
           background-color: #eee;
         }
-        .section h1{
+        .well h1{
           margin-top: 0;
+        }
+
+        .toggle-me{
+            display:none;
         }
         </style>
 
@@ -45,100 +62,295 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
-        <h1>Welcome to the UBD Community Outreach Event page</h1>
-        <h3>This page will help you in making today a success <span class='emoji'>😄</span></h3>
-
-        <p>If you have any questions, in the bottom right of this page, you should see a little chat icon where you can ask us any question. If you do not see it, it is likely that you have some Javascript blockers enabled so we would advise you to whitelist Intercom to allow the chat to load.
-        </p>
+        <div class="container">
 
 
-        <div class='section'>
-        <h1>Organisation</h1>
 
-        <h2>Communication:</h2>
-          <ul>
-            <li>Slack <a href="https://slack.com/">https://slack.com/</a></li>
-            <li>Each project will have their own #channel where you can communicate with your teammates</li>
-            <li>A #general channel can be used to talk to everybody</li>
-            <li>To sign up, go to <a href="http://slack.bruneigeekmeet.com/">http://slack.bruneigeekmeet.com/</a> and enter your email in (<strong>Note: this email will be shown to everybody in the Slack group so use an email you are comfortable giving out to the public</strong>)</li>
+          <div class="row">
+            <div style="" class="col-sm-3">
+              <img src='img/copc_logo.png' style='margin-top: 1.5em'>
+            </div>
+            <div style="" class="col-sm-9">
+              <h1>Welcome to the Community Outreach &amp; Challenge Event page</h1>
+              <h3>April 6th, UBD Chancellor Hall</h3>
+              <h3>Thank you for participating, we and the NGOs really appreciate your efforts <span class='emoji'>👏</span> This page details the projects we're working on today and how we'll manage the work done today in preperation for future works as well! <span class='emoji'>😄</span></h3>
+            </div>
+          </div>
+          <hr>
+
+          <div class="section">
+            <h2>Projects <button class="btn btn-info btn-sm toggle">Show All</button> <span class="btn btn-sm btn-success toggle-me">All sections expanded. Scroll down to view</span></h2>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#suka" aria-controls="suka" role="tab" data-toggle="tab">Sukarelawan Tutong</a></li>
+            <li role="presentation"><a href="#cas" aria-controls="cas" role="tab" data-toggle="tab">Care and Action for Strays</a></li>
+            <li role="presentation"><a href="#kaca" aria-controls="kaca" role="tab" data-toggle="tab">Persatuan Kanak-Kanak Cacat</a></li>
+            <li role="presentation"><a href="#aids-council" aria-controls="aids-council" role="tab" data-toggle="tab">Brunei Darussalam Aids Council</a></li>
+            <li role="presentation"><a href="#okp" aria-controls="okp" role="tab" data-toggle="tab">Orang Kurang Pendegaran</a></li>
           </ul>
 
-        <h2>Documents:</h2>
-          <ul>
-            <li>Google Drive <a href="https://drive.google.com">https://drive.google.com</a></li>
-            <li>For creating collaborative documents and storing and sharing files for the project</li>
-          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="suka">
+              <img class="logo img-rounded pull-md-left" src="img/logo_suka.png" alt="Sukarelawan Tutong (SUKA) logo"/>
+                            <h2>Sukarelawan Tutong (SUKA)</h2>
+              <div class="links"><a href="https://www.facebook.com/Sukarelawan-Daerah-Tutong-SUKA-1398923290412093/" class='facebook'>Facebook: Sukarelawan-Daerah-Tutong-SUKA-1398923290412093</a></div>
 
-        <h2>Tasks:</h2>
-          <ul>
-            <li>Trello <a href="https://trello.com/">https://trello.com/</a></li>
-            <li>For creating tasks and roadmaps for future planning</li>
-          </ul>
 
-        <h2>Storing Code</h2>
-          <ul>
-            <li>Github <a href="https://github.com">https://github.com</a></li>
-            <li>@thewheat will update the code here. Please provide the code via Google Drive</li>
-            <li>If you know how to use Github message @thewheat for access to the repository</li>
-            <li>Alternatively, create a repository of your own and send the link over to @thewheat</li>
-            <li>Code provided in repository will be curated and shared for all to use after the event</li>
-          </ul>
+              <div class="about">
+                <p>The Tutong District Volunteer Group, commonly known as ‘Sukarelawan Daerah Tutong’, was established on February 2 2015 with the aim of providing assistance to the community through volunteer work. Sukarelawan Tutong is under the auspices of Tutong District Office and has volunteers to do community work throughout Tutong District. Based on having solid visionary and integrity as the foundation of their organisation, Volunteers of SUKA comprises of students, youths, civil servants and retirees. Among the activities that SUKA has provided are helping the people whose homes have been affected by floods and landslides. Besides that, SUKA also provide support for underprivileged families, orphans, elderlies and the disabled.</p>
+              </div>
+              <div class="problem panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Problem</h3></div>
+                <div class="panel-body">
+                <ol>
+                  <li>Disseminate information or events to the Bruneian communities from one district to another.</li>
+                  <li>Necessities given in the form of charity by Bruneian communities to be given out to the people whom need it.</li>
+                  <li>Not much Bruneians are aware of SUKA and the activities held by them.</li>
+                  <li>Difficulties in disseminating clothing donated by the public as well as not having an inventory system to check for.</li>
+                </ol>
+              </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="cas">
+              <img class="logo" src="img/logo_cas.png" alt="Care and Action for Strays (CAS) logo"/>
+              <h2>Care and Action for Strays (CAS)</h2>
+              <div class="links"><a href="https://www.facebook.com/careandactionsforstrays/" class='facebook'>Facebook: CareAndActionsForStrays</a>/ <a href="http://careandactionsforstrays.blogspot.com/" class="website">Website: careandactionsforstrays.blogspot.com</a></div>
+
+              <div class="about">
+                <p>Care and Actions for Strays (CAS) was founded in 2005 to rescue, rehabilitate and care for animals neglected, abused and in need of medical attention or care. The founding members have each had extensive experience in assisting and caring for animals in distress. They recognized the need for improvement in many areas of animal welfare in Brunei as  well as a need for an effective and humane urban stray management program to create a better environment for the whole society.</p>
+                <p>At the core of the CAS vision is to seek and implement no-kill solutions (unless for critically ill / injured animals with no chance of a full recovery) to the urban stray problem and animals in need. Through a series of identified projects, CAS aims to take action in the Brunei community to bring out the best in Bruneians and to bring about a place where people and animals co-exist harmoniously medical attention or care.</p>
+              </div>
+              <div class="problem panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Problem</h3></div>
+                <div class="panel-body">
+                <ol>
+                <li>Insufficient funds as we are the only stray animal welfare organization in Brunei and the whole of Brunei calls on CAS to help strays. Need to reach more people who are willingly to give small amounts on mon thly basis, crowd funding platform required.                 </li>
+                <li>Low adoption rates. need to reach more people to adopt from CAS instead of buying cats and dogs so that we can help more animals and get them off the streets                 </li>
+                <li>Lack of awareness and education on responsible pet ownership which includes spaying / neutering pets to prevent unwanted puppies and kittens, no chaining n no caging of pets while not allowing them to roam the streets and create a nuisance to neighbors,                 </li>
+                <li>Need animal data management to manage, track and record animals rescued, rehomed, spayed etc                 </li>
+                <li>Lack of committed active volunteers and volunteers data management.</li>
+              </ol>
+            </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="kaca">
+              <img class="logo" src="img/logo_kaca.png" alt="KACA logo"/>
+                            <h2>Persatuan Kanak-Kanak Cacat (KACA)</h2>
+              <div class="links"><a href="https://www.facebook.com/kacabrunei/" class='facebook'>Facebook: kacabrunei</a> / <a href="http://kacabrunei.blogspot.com/" class='website'>Website: kacabrunei.blogspot.com</a></div>
+
+
+              <div class="about">
+                <p>KACA was created to increase the welfare of disabled children in Brunei Darussalam whom have not had any formal training or education. KACA provides guidance programs and special training so the children can live independently and are capable in furthering their studies in normal schools.</p>
+                <p>The main objective of KACA is to create a training institute and set a benchmark for program facilities and activities in Early Development Program and Special Education for children.</p>
+              </div>
+              <div class="problem panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Problem</h3></div>
+                <div class="panel-body">
+                <ol>
+                  <li>Lack of youth volunteers to help KACA during events and care for the special needs.</li>
+                  <li>Lack of fund raising or donation platform for KACA. </li>
+                </ol>
+              </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="aids-council">
+              <img class="logo" src="img/logo_aids_council.png" alt="Brunei Darussalam Aids Council logo"/>
+                            <h2>Brunei Darussalam Aids Council</h2>
+              <div class="links"><a href="https://www.facebook.com/bdaidscouncil/" class='facebook'>Facebook: BDAidsCouncil</a>/ <a href="http://twitter.com/BDAIDSCouncil" class='website'>Twitter: @BDAIDSCouncil</a></div>
+
+
+              <div class="about">
+                <p>Brunei Darussalam Aids Council (BDAC) is an organization tackling the HIV &amp; AIDS situation in Brunei Darussalam, where it aims to educate the public on related issues, the likes of Sexually Transmitted Infection, Unwanted Pregnancy &amp; Social issues. The council uses multiple approaches in reaching its objectives; youth work &amp; trainings, youth &amp; community participation, outreach programs, voluntary work, media coverage, collaboration with other agencies etc.</p>
+              </div>
+              <div class="problem panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Problem</h3></div>
+                <div class="panel-body">
+                <ol>
+                <li>No database management for BDAC trained members and volunteers.</li>
+                <li>Difficulty in tracking members and volunteers. Currently there is no database/ system installed to assist tracking. </li>
+              </ol>
+            </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="okp">
+              <img class="logo" src="img/logo_okp.jpg" alt="Orang Kurang Pendegaran (OKP) logo"/>
+                            <h2>Orang Kurang Pendegaran (OKP)</h2>
+              <div class="links"><a href="https://www.facebook.com/persatuanokpkebangsaan/" class='facebook'>Facebook: PersatuanOKPKebangsaan</a></div>
+
+
+              <div class="about">
+                <p>The Association for the Hearing Impaired (OK) was formally established on 13th June 2010. Now it has more than 200 members comprising of the hearing impaired, volunteers, friends and family members. Their mission is to strengthen solidarity amongst deaf and hearing members in order to promote awareness on hearing impairment, and the rights, culture and language of people with hearing impairment in Negara Brunei Darussalam. The National Association for the Hearing Impaired is also committed to improve the education and quality of life of individuals with hearing impairment in the country, to integrate and become contributing members of the society. They believe in equal opportunity in all aspects, for the hearing impaired, and support them to reach their full potential.</p>
+
+                <p>OKP (Orang Kurang Pendengaran) aims to provide:
+                  <ul>
+                    <li>Equal opportunity in education, employment and accessibility</li>
+                    <li>Public awareness on Hearing Impairment, the Brunei Deaf Culture and support efforts for its propagation.</li>
+                  </ul>
+                </p>
+
+              </div>
+              <div class="problem panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Problem</h3></div>
+                <div class="panel-body">
+                <ol>
+                  <li>In need of some sort of learning management/ict skills or mentoring app for the Hearing Disabilities Society</li>
+                  <li>In need of a database management systems to keep track of records or information of OKP membership &amp; other relevant details which they can use to extract some form of reports</li>
+                </ol>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-          <div class='section'>
-          <h1>Got a Question?</h1>
+
+        <div class="section">
+            <h2>Guidelines <button class="btn btn-info btn-sm toggle">Show All</button>
+              <span class="btn btn-sm btn-success toggle-me">All sections expanded. Scroll down to view</span>
+            </h2>
+
+          <!-- Nav tabs -->
+            <ul class="nav nav-pills" role="tablist" style='margin-bottom: 1em'>
+              <li role="presentation" class="active"><a href="#organisation" aria-controls="organisation" role="tab" data-toggle="tab">Organisation</a></li>
+              <li role="presentation"><a href="#slack" aria-controls="slack" role="tab" data-toggle="tab">Slack</a></li>
+              <li role="presentation"><a href="#google-drive" aria-controls="google-drive" role="tab" data-toggle="tab">Google Drive</a></li>
+              <li role="presentation"><a href="#trello" aria-controls="trello" role="tab" data-toggle="tab">Trello</a></li>
+              <li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab">Github</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="organisation">
+
+                <div class="panel panel-info">
+                  <div class="panel-heading"><h3 class="panel-title">Organisation</h3></div>
+                  <div class="panel-body">
+
+
+                <h4>Communication:</h4>
+                  <ul>
+                    <li>Slack <a href="https://slack.com/">https://slack.com/</a></li>
+                    <li>Each project will have their own #channel where you can communicate with your teammates</li>
+                    <li>A #general channel can be used to talk to everybody</li>
+                    <li>To sign up, go to <a href="http://slack.bruneigeekmeet.com/">http://slack.bruneigeekmeet.com/</a>, enter your email and you'll get an invite email to join the Slack community</br>(<strong>Note: this email will be shown to everybody in the Slack group so use an email you are comfortable giving out to the public</strong>)</li>
+                  </ul>
+
+                <h4>Documents:</h4>
+                  <ul>
+                    <li>Google Drive <a href="https://drive.google.com">https://drive.google.com</a></li>
+                    <li>For creating collaborative documents and storing and sharing files for the project</li>
+                  </ul>
+
+                <h4>Tasks:</h4>
+                  <ul>
+                    <li>Trello <a href="https://trello.com/">https://trello.com/</a></li>
+                    <li>For creating tasks and roadmaps for future planning</li>
+                  </ul>
+
+                <h4>Storing Code</h4>
+                  <ul>
+                    <li>Github <a href="https://github.com">https://github.com</a></li>
+                    <li>@thewheat will update the code here. Please provide the code via Google Drive</li>
+                    <li>If you know how to use Github message @thewheat for access to the repository</li>
+                    <li>Alternatively, create a repository of your own and send the link over to @thewheat</li>
+                    <li>Code provided in repository will be curated and shared for all to use after the event</li>
+                  </ul>
+                </div>
+                </div>
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="slack">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Slack</h3>
+                    <a href="https://slack.com/">https://slack.com/</a>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li>Chat throughout the day in #general / #community_outreach</li>
+                        <li>Each project will have their own specific channel </li>
+                        <li>Browse all channels by clicking the "Channels" link in the sidebar<br/> <img alt="Show channels" src="img/show_channels.png"></li>
+                        <li>Join a channel by clicking into a channel<br /><img alt="Select a channel" src="img/select_channel.png"></li>
+                        <li>Then clicking the "Join Channel" button (or pressing return/enter)<br /><img alt="Join a channel" src="img/join_channel.png"></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="google-drive">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Google Drive</h3>
+                    <a href="https://drive.google.com">https://drive.google.com</a>
+                  </div>
+                  <div class="panel-body">
+                    <h4>Adding a teammate to have access to a folder</h4>
+                    <ul>
+                        <li>Right click the folder </li>
+                        <li>Click Share<br>
+                            <img alt="Share option menu on right click" src="img/right_click_share.png"></li>
+                        <li>Add the person&rsquo;s email and ensure that the can edit the folder<br>
+                            <img alt="Add a person with permision to edit" src="img/add_person_with_edit_permissions.png"></li>
+                        <li>Remember to add <a href="mailto:tim@thewheatfield.org">tim@thewheatfield.org</a> to your folder</li>
+                    </ul>
+                  </div>
+                  </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="trello">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Trello</h3>
+                      <a href="https://trello.com/">https://trello.com/</a>
+                    </div>
+                    <div class="panel-body">
+                <ul>
+                  <li>Add a List to store specific types of tasks to do (simples ones would be "To do" and "Done". You can have other lists like "Things to do for the future" or Lists to indicate future tasks to get done)</li>
+                  <li>Add a card as a task to be done<br><img alt="Adding lists and cards" src="img/adding_lists_cards.png"></li>
+                  <li>Click on an individual card to show / add more details (Add Members to a card to assign them a task to do)<br><img alt="Card details and task assignment" src="img/card_details_and_task_assignment.png"></li>
+                  <li>When a task is completed drag it over to a "Done" list<br><img alt="Move item to Done/Completed" src="img/move_to_completed.png"></li>
+                </ul>
+                <h4>Adding a teammate to your board</h4>
+                <ul>
+                  <li>You can add them via their email (name@domain.com) or username<br /> <img alt="Add a person to a board" src="img/add_person_to_board.png"></li>
+                  <li>Remember to add tim@thewheatfield.org / thewheat to your board </li>
+                </ul>
+              </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="github">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Github</h3>
+                    <a href="https://github.com">https://github.com</a>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li>Each project will have their own repository / repos</li>
+                      <li>These repos will only be updateable by @thewheat</li>
+                      <li>If you know how to use Github, please message @thewheat to allow you access to the repo</li>
+                      <li>Otherwise, please send your code over via Google Drive before the day is done</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="section">
+          <h2><i class="glyphicon glyphicon-question-sign"></i> Got a Question?</h2>
           <ul>
-              <li>Send a message / direct message to @thewheat on Slack or </li>
+            <li>Look for an organiser around you</li>
+            <li>or Send a message / direct message to @thewheat on Slack</li>
+            <li>or Start a chat on the right (you should see a little chat icon where you can chat anonymously. If you do not see it, it is likely that you have some Javascript blockers enabled so we would advise you to whitelist Intercom to allow the chat to load)</li>
           </ul>
-          </div>
-          <div class='section'>
-            <h1>Google Drive</h1>
-            <h2>Adding a teammate to have access to a folder</h2>
-            <ul>
-                <li>Right click the folder </li>
-                <li>Click Share<br>
-                    <img alt="" src="img/image04.png"></li>
-                <li>Add the person&rsquo;s email and ensure that the can edit the folder<br>
-                    <img alt="" src="img/image06.png"></li>
-                <li>Remember to add <a href="mailto:tim@thewheatfield.org">tim@thewheatfield.org</a> to your folder</li>
-            </ul>
-          </div>
-            <div class='section'>
-            <h1>Trello</h1>
-            <ul>
-              <li>Add a List to store specific types of tasks to do (simples ones would be "To do" and "Done". You can have other lists like "Things to do for the future" or Lists to indicate future tasks to get done)</li>
-              <li>Add a card as a task to be done<br><img alt="" src="img/image07.png"></li>
-              <li>Click on an individual card to show / add more details (Add Members to a card to assign them a task to do)<br><img alt="" src="img/image08.png"></li>
-              <li>When a task is completed drag it over to a "Done" list<br><img alt="" src="img/image00.png"></li>
-            </ul>
-            <h2>Adding a teammate to your board</h2>
-            <ul>
-              <li>You can add them via their email (name@domain.com) or username<br /> <img alt="" src="img/image03.png"></li>
-              <li>Remember to add tim@thewheatfield.org / thewheat to your board </li>
-            </ul>
-          </div>
-            <div class='section'>
-            <h1>Slack</h1>
-            <ul>
-                <li>Chat throughout the day in #general / #community_outreach</li>
-                <li>Each project will have their own specific channel </li>
-                <li>Browser all channels by clicking the "Channels" link in the sidebar<br/> <img alt="" src="img/image05.png"></li>
-                <li>Join a channel by clicking into a channel<br /><img alt="" src="img/image01.png"></li>
-                <li>Then clicking the "Join Channel" button (or pressing return/enter)<br /><img alt="" src="img/image02.png"></li>
-            </ul>
-          </div>
-            <div class='section'>
-            <h1>Github</h1>
-            <ul>
-              <li>Each project will have their own repository / repos</li>
-              <li>These repos will only be updateable by @thewheat</li>
-              <li>If you know how to use Github, please message @thewheat to allow you access to the repo</li>
-              <li>Otherwise, please send your code over via Google Drive before the day is done</li>
-            </ul>
-          </div>
+      </div>
+    </div>
 
 
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
+          $(".toggle").click(function(){
+            $(this).closest(".section").find(".tab-pane").addClass("active");
+            $(this).parent().find(".toggle-me").css("opacity", 1).fadeIn().animate({opacity: 0}, 3000, function(){});
+
+          });
           window.intercomSettings = {
             app_id: "ts6ri9kr"
           };
