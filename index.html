@@ -15,22 +15,24 @@
           font-family: sans-serif;
         }
 
+        #logo {
+           margin-top: 1.5em;
+        }
+        #guideline-nav{
+          margin-bottom: 1em;
+        }
+
         .section {
           border: 1px solid #eee;
           padding: 1em;
           margin-bottom: 1em;
+          border-radius: 5px;
         }
 
         .section > h2{
           margin-top: 0;
         }
 
-        .emoji {
-          font-weight: normal; /* fix Chroem bug */
-        }
-        img {
-          max-width:100%;
-        }
         img.logo{
           max-height: 5em;
           float:left;
@@ -40,19 +42,18 @@
           clear: both;
           margin-top: 1em;
         }
-        .well {
-          margin-bottom: 1em;
-          border: 1px solid gray;
-          padding: 0.5em;
-          background-color: #eee;
-        }
-        .well h1{
-          margin-top: 0;
-        }
 
+        .emoji {
+          font-weight: normal; /* fix Chroem bug */
+        }
+        img {
+          max-width:100%;
+        }
         .toggle-me{
             display:none;
         }
+
+
         </style>
 
     </head>
@@ -67,13 +68,13 @@
 
 
           <div class="row">
-            <div style="" class="col-sm-3">
-              <img src='img/copc_logo.png' style='margin-top: 1.5em'>
+            <div class="col-sm-3">
+              <img id="logo" src='img/copc_logo.png'>
             </div>
-            <div style="" class="col-sm-9">
+            <div class="text-center col-sm-9">
               <h1>Welcome to the Community Outreach &amp; Challenge Event page</h1>
-              <h3>April 6th, UBD Chancellor Hall</h3>
-              <h3>Thank you for participating, we and the NGOs really appreciate your efforts <span class='emoji'>👏</span> This page details the projects we're working on today and how we'll manage the work done today in preparation for future works as well! <span class='emoji'>😄</span></h3>
+              <h3><span class="label label-success">April 6th, UBD Chancellor Hall</span></h3>
+              <h3 class='well well-lg'>Thank you for participating, we and the NGOs really appreciate your efforts <span class='emoji'>👏</span> This page details the projects we're working on today and how we'll manage the work done today in preparation for future works as well! <span class='emoji'>😄</span></h3>
             </div>
           </div>
           <hr>
@@ -208,7 +209,7 @@
             </h2>
 
           <!-- Nav tabs -->
-            <ul class="nav nav-pills" role="tablist" style='margin-bottom: 1em'>
+            <ul class="nav nav-pills" role="tablist" id="guideline-nav">
               <li role="presentation" class="active"><a href="#organisation" aria-controls="organisation" role="tab" data-toggle="tab">Organisation</a></li>
               <li role="presentation"><a href="#slack" aria-controls="slack" role="tab" data-toggle="tab">Slack</a></li>
               <li role="presentation"><a href="#google-drive" aria-controls="google-drive" role="tab" data-toggle="tab">Google Drive</a></li>
